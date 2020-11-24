@@ -2920,7 +2920,7 @@ font-family: 'Nunito', sans-serif;
 /* Header */
 
 	#header {
-		padding: 5em 5em 1em 5em ;
+		padding: 3.2em 5em 1em 5em ;
 		text-align: center;
 	}
 
@@ -2987,7 +2987,7 @@ font-family: 'Nunito', sans-serif;
 		@media screen and (max-width: 980px) {
 
 			#header {
-				padding: 4em 3em 0.1em 3em ;
+				padding: 3em 3em 0.1em 3em ;
 			}
 
 				#header.alt {
@@ -2999,7 +2999,7 @@ font-family: 'Nunito', sans-serif;
 		@media screen and (max-width: 736px) {
 
 			#header {
-				padding: 3em 2em 0.1em 2em ;
+				padding: 2.5em 2.5em 0.1em 2em ;
 			}
 
 				#header p {
@@ -3024,7 +3024,7 @@ font-family: 'Nunito', sans-serif;
 		@media screen and (max-width: 480px) {
 
 			#header {
-				padding: 3em 1.5em 0.1em 1.5em ;
+				padding: 2.5em 1.5em 0.1em 1.5em ;
 			}
 
 				#header.alt {
