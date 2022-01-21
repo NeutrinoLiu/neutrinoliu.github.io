@@ -1,0 +1,203 @@
+:root {
+  --font-size: 18px;
+  --line-height: 30px;
+
+  /* https://ethanschoonover.com/solarized/ */
+
+  --solarized-base03: #002b36;
+  --solarized-base02: #073642;
+  --solarized-base01: #586e75;
+  --solarized-base00: #657b83;
+  --solarized-base0: #839496;
+  --solarized-base1: #93a1a1;
+  --solarized-base2: #eee8d5;
+  --solarized-base3: #fdf6e3;
+
+  --solarized-yellow: #b58900;
+  --solarized-orange: #cb4b16;
+  --solarized-red: #dc322f;
+  --solarized-magenta: #d33682;
+  --solarized-violet: #6c71c4;
+  --solarized-blue: #268bd2;
+  --solarized-cyan: #2aa198;
+  --solarized-green: #859900;
+}
+
+:root {
+  --background: var(--solarized-base3);
+  --text: var(--solarized-base00);
+  --text-emphasized: var(--solarized-base01);
+  --text-sub: var(--solarized-base1);
+  --link: var(--solarized-blue);
+  --link-hover: var(--solarized-cyan);
+  --link-highlight: var(--solarized-orange);
+}
+::selection {
+  background-color: var(--solarized-base2);
+  color: var(--solarized-base01);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--solarized-base03);
+    --text: var(--solarized-base0);
+    --text-emphasized: var(--solarized-base1);
+    --text-sub: var(--solarized-base01);
+  }
+  ::selection {
+    background-color: var(--solarized-base02);
+    color: var(--solarized-base1);
+  }
+}
+
+body {
+  color: var(--text);
+  background-color: var(--background);
+  font: var(--font-size) / var(--line-height) "Noto Serif SC", serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+h1,
+h2 {
+  color: var(--text-emphasized);
+}
+
+main {
+  max-width: calc(100% - 2rem);
+  margin: 1rem auto;
+}
+
+h1 {
+  font-size: var(--font-size);
+  margin: 0 0 var(--line-height);
+}
+
+nav {
+  margin-bottom: var(--line-height);
+}
+
+nav ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+nav li {
+  list-style: none;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+nav a.current {
+  color: var(--link-highlight);
+}
+
+article:lang(jp),
+aside:lang(jp) {
+  font-family: "Noto Serif JP", serif;
+}
+
+article h2 {
+  font-size: var(--font-size);
+  margin: var(--line-height) 0;
+}
+
+article p {
+  margin: calc(var(--line-height) / 2) 0;
+}
+
+article blockquote {
+  margin: calc(var(--line-height) / 2) 0 calc(var(--line-height) / 2) 2em;
+}
+
+article hr {
+  border: none;
+  margin: var(--line-height) auto;
+  text-align: center;
+}
+
+article hr::before {
+  content: "❦";
+  color: var(--text-sub);
+}
+
+article.novel p {
+  margin: 0;
+  text-align: justify;
+}
+
+article.novel p + p {
+  text-indent: 2em;
+}
+
+aside {
+  padding-top: calc(var(--line-height) * 2);
+  color: var(--text-sub);
+}
+
+@media screen and (min-width: 801px) {
+  main {
+    width: calc(98% - 6rem);
+    max-width: 96rem;
+    margin: calc(var(--line-height) * 3) auto var(--line-height);
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+    gap: 3rem;
+  }
+  nav.mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav.desktop {
+    display: none;
+  }
+  nav.mobile summary {
+    font-weight: bold;
+    margin-bottom: calc(var(--line-height) / 2);
+  }
+  article.novel p + p {
+    text-indent: 1em;
+  }
+
+  aside {
+    padding-top: calc(var(--line-height) / 2);
+  }
+}
+
+@media print {
+  :root {
+    --font-size: 8pt;
+    --line-height: 14pt;
+  }
+  nav {
+    display: none;
+  }
+  article h1 {
+    text-align: center;
+    font-size: calc(var(--font-size) * 1.5);
+    margin-bottom: calc(var(--line-height) * 2);
+  }
+  .content {
+    column-count: 2;
+    column-gap: 2em;
+  }
+  article p {
+    margin: 0;
+  }
+  article p + p {
+    text-indent: 2em;
+  }
+  article h2 {
+    text-indent: 4em;
+    page-break-inside: avoid;
+  }
+}
