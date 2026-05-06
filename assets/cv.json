@@ -1,0 +1,468 @@
+{
+  "profile": {
+    "name": "Bangya Liu",
+    "name_zh": "刘邦亚",
+    "alias": "Neutrino",
+    "title": "Member of Technical Staff, Abaka.ai | Research Scientist, 2077AI Open Source Foundation | Ph.D. Candidate, ECE @ UW–Madison",
+    "current_positions": [
+      {
+        "role": "Member of Technical Staff",
+        "org": "Abaka.ai",
+        "url": "https://abaka.ai/"
+      },
+      {
+        "role": "Research Scientist",
+        "org": "2077AI",
+        "url": "https://2077ai.com"
+      },
+      {
+        "role": "Ph.D. Candidate",
+        "org": "UW–Madison",
+        "url": "https://www.engr.wisc.edu/department/electrical-computer-engineering/"
+      }
+    ],
+    "bio": [
+      "I work where 3D vision, video generation, and embodied AI feed into each other — getting models to see the geometry of a scene, imagine new versions of it, and act inside it through hands, robots, and vision-language-action policies.",
+      "I'm finishing up my Ph.D. at the [MadNets](https://madnets.cs.wisc.edu/) Lab (originally WiNGS) at UW–Madison, advised by [Prof. Suman Banerjee](https://pages.cs.wisc.edu/~suman/), where I bounce between video DiTs, Gaussian splats, and the network plumbing underneath.",
+      "Always happy to chat — drop a note about anything."
+    ],
+    "research_interests": [
+      "Embodied AI",
+      "3D vision",
+      "Video generation",
+      "Spatial Intelligence",
+      "Computer networking"
+    ],
+    "photo": "media/portrait.jpeg",
+    "links": {
+      "email_primary": "liubangya@gmail.com",
+      "email_secondary": "bliu277@wisc.edu",
+      "google_scholar": "https://scholar.google.com/citations?user=yWuQY0UAAAAJ&hl=en&oi=ao",
+      "github": "https://github.com/NeutrinoLiu",
+      "linkedin": "https://www.linkedin.com/in/neutrinoliu/",
+      "cv_pdf": "cv_2026.pdf"
+    }
+  },
+  "experience": [
+    {
+      "role": "Member of Technical Staff",
+      "org": "Abaka.ai",
+      "url": "https://abaka.ai/",
+      "location": "Palo Alto, CA",
+      "start": "Feb 2026",
+      "end": "Present"
+    },
+    {
+      "role": "Research Scientist",
+      "org": "2077AI Open Source Foundation",
+      "url": "https://2077ai.com",
+      "location": "Remote",
+      "start": "Feb 2026",
+      "end": "Present"
+    },
+    {
+      "role": "Ph.D., Electrical and Computer Engineering",
+      "org": "University of Wisconsin–Madison",
+      "url": "https://www.engr.wisc.edu/department/electrical-computer-engineering/",
+      "location": "Madison, WI",
+      "start": "May 2021",
+      "end": "Jul 2026"
+    },
+    {
+      "role": "PhD MLE Intern",
+      "org": "ByteDance — E-Commerce R&D",
+      "location": "San Jose, CA",
+      "start": "May 2025",
+      "end": "Nov 2025"
+    },
+    {
+      "role": "PhD SDE Intern",
+      "org": "ByteDance — Networking R&D",
+      "location": "San Jose, CA",
+      "start": "May 2024",
+      "end": "Aug 2024"
+    },
+    {
+      "role": "Research Intern",
+      "org": "Telefónica Research",
+      "location": "Remote",
+      "start": "Sept 2022",
+      "end": "Sept 2023"
+    },
+    {
+      "role": "M.S., Electrical and Computer Engineering",
+      "org": "University of Wisconsin–Madison",
+      "location": "Madison, WI",
+      "start": "Sept 2019",
+      "end": "May 2021"
+    },
+    {
+      "role": "B.E., Electrical and Electronics",
+      "org": "Huazhong University of Science and Technology",
+      "location": "Wuhan, China",
+      "start": "Sept 2015",
+      "end": "Jun 2019"
+    }
+  ],
+  "highlights": [
+    "omnihamer", "cyberarena", "byteloom", "swings", "transformer-slam", "spatialstack"
+  ],
+  "projects": [
+    {
+      "id": "omnihamer",
+      "title": "OmniHaMeR: Foundation Model for Metric Hand Pose Estimation",
+      "status": "ongoing",
+      "affiliation": "2077AI",
+      "tags": ["Hand Pose", "ViT", "Vision Foundation Model", "Embodied AI"],
+      "description": "Designing and training a vision foundation model that ingests arbitrary combinations of inputs (RGB, depth, intrinsics, extrinsics, hand masks, wrist views, …) and regresses metrically accurate hand meshes in world coordinates. Unlike prior RGB-only weak-perspective methods that output only root-aligned poses, this work targets absolute MPJPE to support VLA co-training. Adopts a MapAnything-style end-to-end architecture with a MANO head, trained at scale on multiple datasets.",
+      "links": {}
+    },
+    {
+      "id": "cyberarena",
+      "title": "CyberArena: Adversarial Cybersecurity Arena for LLM Coding Agents",
+      "status": "ongoing",
+      "affiliation": "2077AI",
+      "tags": ["LLM Agents", "Cybersecurity", "LLM Arena", "Benchmark"],
+      "description": "Building a live-combat evaluation environment where attacker and defender agents fight over a shared simulated sandbox under partial observability, moving beyond static CTF benchmarks. Proposes the Defend/Attack Token Ratio (DATR), the first token-level metric quantifying offense/defense economic asymmetry. Empirically tests the “cybersecurity as proof-of-work” thesis across model capability tiers.",
+      "links": {}
+    },
+    {
+      "id": "byteloom",
+      "title": "ByteLOOM: Weaving Geometry-Consistent Human-Object Interactions Videos through Progressive Curriculum Learning",
+      "authors": [
+        {"name": "Bangya Liu", "is_me": true},
+        {"name": "Xinyu Gong"},
+        {"name": "Zelin Zhao"},
+        {"name": "Ziyang Song"},
+        {"name": "Yulei Lu"},
+        {"name": "Suhui Wu"},
+        {"name": "Jun Zhang"},
+        {"name": "Suman Banerjee"},
+        {"name": "Hao Zhang"}
+      ],
+      "venue": "arXiv",
+      "year": 2026,
+      "status": "accepted",
+      "affiliation": "ByteDance Internship",
+      "tags": ["HOI", "DiT", "3D Reconstruction", "Wan2.1"],
+      "description": "Built a human–object interaction video generation model on top of Wan2.1 with realistic human dynamics and diverse object viewpoint synthesis. Curated large-scale open-source hand-object interaction datasets to train the DiT, and introduced a geometry-aware conditioning mechanism that combines multi-view object reference images with relative coordinate maps for consistent generation across viewpoints.",
+      "links": {
+        "paper": "https://arxiv.org/abs/2512.22854",
+        "project_page": "https://neutrinoliu.github.io/byteloom/"
+      },
+      "media": {
+        "video": "media/byteloom.mp4"
+      }
+    },
+    {
+      "id": "swings",
+      "title": "SwinGS: Sliding Window Gaussian Splatting for Volumetric Video Streaming with Arbitrary Length",
+      "authors": [
+        {"name": "Bangya Liu", "is_me": true},
+        {"name": "Suman Banerjee"}
+      ],
+      "year": 2024,
+      "status": "arxiv",
+      "tags": ["Gaussian Splatting", "Volumetric Video"],
+      "description": "A streaming-friendly framework for training, delivering, and rendering volumetric video in real time. Combines spacetime Gaussian with Markov-Chain Monte Carlo to adapt the model across 3D scenes and frames, and uses a sliding window to capture per-frame Gaussian snapshots in a continuous training loop — removing the duration limits of prior dynamic 3DGS approaches.",
+      "links": {
+        "paper": "https://arxiv.org/abs/2409.07759",
+        "demo": "https://swingsplat.github.io/demo/"
+      },
+      "media": {
+        "image": "media/swings.png"
+      }
+    },
+    {
+      "id": "transformer-slam",
+      "title": "Accelerating Transformer-Based Monocular SLAM via Geometric Utility Scoring",
+      "authors": [
+        {"name": "Xun Xiong", "equal_contribution": true},
+        {"name": "Bangya Liu", "is_me": true, "equal_contribution": true},
+        {"name": "Hao Wang"},
+        {"name": "Dongxu Li"},
+        {"name": "Nan Chen"},
+        {"name": "Suman Banerjee"},
+        {"name": "Zhiwen Fan"}
+      ],
+      "year": 2026,
+      "status": "arxiv",
+      "tags": ["SLAM", "Transformer", "Geometry Scoring"],
+      "description": "Proposed LeanGate, a lightweight feed-forward frame-gating network for transformer-based monocular SLAM. Predicts a per-frame geometric utility score before the heavy geometry foundation model stage, bypassing over 90% of redundant frames; reduces tracking FLOPs by >85% and yields a 5× end-to-end throughput speedup while preserving the accuracy of dense baselines.",
+      "links": {
+        "paper": "https://arxiv.org/abs/2604.08718",
+        "project_page": "https://lean-gate.github.io/"
+      },
+      "media": {
+        "video": "https://lean-gate.github.io/LeanGate_files/demov4_720p_h265.mp4"
+      }
+    },
+    {
+      "id": "spatialstack",
+      "title": "SpatialStack: Layered Geometry-Semantic Fusion for 3D Spatial Reasoning",
+      "authors": [
+        {"name": "Jian Zhang", "equal_contribution": true},
+        {"name": "Shijie Zhou", "equal_contribution": true},
+        {"name": "Bangya Liu", "is_me": true, "equal_contribution": true},
+        {"name": "Achuta Kadambi"},
+        {"name": "Zhiwen Fan"}
+      ],
+      "venue": "CVPR",
+      "year": 2026,
+      "status": "accepted",
+      "tags": ["VLM", "3D Spatial Reasoning", "Geometry Foundation Model"],
+      "description": "A hierarchical fusion framework that aligns multi-level geometric features with language backbones for 3D spatial reasoning in VLMs. Unlike prior work that fuses only deep-layer features and discards rich hierarchical signals, SpatialStack progressively stacks features across multiple model depths to jointly capture fine-grained local geometry and broader contextual semantics. The resulting VLM-SpatialStack achieves state-of-the-art performance across multiple 3D spatial reasoning benchmarks.",
+      "links": {
+        "paper": "https://arxiv.org/abs/2603.27437",
+        "project_page": "https://spatial-stack.github.io/"
+      },
+      "media": {
+        "video": "https://spatial-stack.github.io/static/videos/spatialstack_video.mp4"
+      }
+    },
+    {
+      "id": "egohoi",
+      "title": "Egocentric World Model for Photo-Realistic Hand–Object Interaction Synthesis",
+      "authors": [
+        {"name": "Dayou Li", "equal_contribution": true},
+        {"name": "Lulin Liu", "equal_contribution": true},
+        {"name": "Bangya Liu", "is_me": true},
+        {"name": "Shijie Zhou"},
+        {"name": "Jiu Feng"},
+        {"name": "Ziqi Lu"},
+        {"name": "Minghui Zheng"},
+        {"name": "Chenyu You"},
+        {"name": "Zhiwen Fan", "corresponding": true}
+      ],
+      "year": 2026,
+      "status": "arxiv",
+      "tags": ["World Model", "Egocentric", "HOI"],
+      "links": {
+        "paper": "https://arxiv.org/abs/2603.13615",
+        "project_page": "https://egohoi.github.io/"
+      },
+      "media": {
+        "video": "https://egohoi.github.io/static/videos/egohoi_promo_draft_v28.mp4"
+      }
+    },
+    {
+      "id": "cetcam",
+      "title": "CETCam: Camera-Controllable Video Generation via Consistent and Extensible Tokenization",
+      "authors": [
+        {"name": "Zihao Zhao"},
+        {"name": "Xinyu Gong"},
+        {"name": "Bangya Liu", "is_me": true},
+        {"name": "Zixiang Song"},
+        {"name": "Junlin Zhang"},
+        {"name": "Sirui Wu"},
+        {"name": "Yu Chen"},
+        {"name": "Hao Zhang"}
+      ],
+      "venue": "CVPR Findings",
+      "year": 2026,
+      "status": "accepted",
+      "tags": ["Video Generation", "Camera Control", "Tokenizer"],
+      "links": {
+        "paper": "https://arxiv.org/abs/2512.19020",
+        "project_page": "https://sjtuytc.github.io/CETCam_project_page.github.io/"
+      },
+      "media": {
+        "video": "https://sjtuytc.github.io/CETCam_project_page.github.io/CETCam_videos/background/1.mp4"
+      }
+    },
+    {
+      "id": "mv-s2v",
+      "title": "MV-S2V: Multi-View Subject-Consistent Video Generation",
+      "authors": [
+        {"name": "Zixiang Song"},
+        {"name": "Xinyu Gong"},
+        {"name": "Bangya Liu", "is_me": true},
+        {"name": "Zihao Zhao"}
+      ],
+      "venue": "SIGGRAPH",
+      "year": 2026,
+      "status": "accepted",
+      "tags": ["Multi-View", "Subject Consistency", "Video Generation"],
+      "links": {
+        "paper": "https://arxiv.org/abs/2601.17756",
+        "project_page": "https://szy-young.github.io/mv-s2v"
+      },
+      "media": {
+        "video": "https://szy-young.github.io/mv-s2v/images/comp_1_ours.mp4"
+      }
+    },
+    {
+      "id": "vefx-bench",
+      "title": "VEFX-Bench: A Holistic Benchmark for Generic Video Editing and Visual Effects",
+      "authors": [
+        {"name": "Xiangbo Gao"},
+        {"name": "Sicong Jiang"},
+        {"name": "Bangya Liu", "is_me": true},
+        {"name": "Xinghao Chen"},
+        {"name": "Minglai Yang"},
+        {"name": "Siyuan Yang"},
+        {"name": "Mingyang Wu"},
+        {"name": "Jiongze Yu"},
+        {"name": "Qi Zheng"},
+        {"name": "Haozhi Wang"},
+        {"name": "Jiayi Zhang"},
+        {"name": "Jie Yang"},
+        {"name": "Zihan Wang"},
+        {"name": "Qing Yin"},
+        {"name": "Zhengzhong Tu"}
+      ],
+      "year": 2026,
+      "status": "arxiv",
+      "tags": ["Benchmark", "Video Editing", "Visual Effects"],
+      "links": {
+        "paper": "https://arxiv.org/abs/2604.16272",
+        "project_page": "https://xiangbogaobarry.github.io/VEFX-Bench/"
+      },
+      "media": {
+        "video": "https://xiangbogaobarry.github.io/VEFX-Bench/static/videos/sample_1_original.mp4"
+      }
+    },
+    {
+      "id": "privacy-aware-perception",
+      "title": "Privacy-Aware Sharing of Raw Spatial Sensor Data for Cooperative Perception",
+      "authors": [
+        {"name": "Bangya Liu", "is_me": true},
+        {"name": "Chengpo Yan"},
+        {"name": "Chenghao Jiang"},
+        {"name": "Suman Banerjee"},
+        {"name": "Akarsh Prabhakara"}
+      ],
+      "venue": "HotMobile",
+      "year": 2026,
+      "status": "accepted",
+      "tags": ["V2V", "Cooperative Perception", "Foundation Models"],
+      "links": {
+        "paper": "https://arxiv.org/pdf/2512.16265"
+      },
+      "media": {
+        "image": "media/sharp.png"
+      }
+    },
+    {
+      "id": "wfm-test-time",
+      "title": "Can Test-Time Scaling Improve World Foundation Model?",
+      "authors": [
+        {"name": "Wenyan Cong"},
+        {"name": "Hanqing Zhu"},
+        {"name": "Peihao Wang"},
+        {"name": "Bangya Liu", "is_me": true},
+        {"name": "Dejia Xu"},
+        {"name": "Kevin Wang"},
+        {"name": "David Z. Pan"},
+        {"name": "Yan Wang"},
+        {"name": "Zhiwen Fan"},
+        {"name": "Zhangyang Wang"}
+      ],
+      "venue": "COLM",
+      "year": 2025,
+      "status": "accepted",
+      "tags": ["World Foundation Model", "Test-Time Scaling"],
+      "links": {
+        "paper": "https://arxiv.org/pdf/2503.24320",
+        "project_page": "https://scalingwfm.github.io/"
+      },
+      "media": {
+        "video": "https://scalingwfm.github.io/static/videos/swift.mp4"
+      }
+    },
+    {
+      "id": "fiesta",
+      "title": "Sustainable Spectrum Crowdsensing",
+      "authors": [
+        {"name": "Yijing Zeng", "equal_contribution": true},
+        {"name": "Bangya Liu", "is_me": true, "equal_contribution": true},
+        {"name": "Yilong Li"},
+        {"name": "Domenico Giustiniano"},
+        {"name": "Suman Banerjee"}
+      ],
+      "venue": "IEEE/ACM Transactions on Networking",
+      "year": 2026,
+      "status": "accepted",
+      "tags": ["Federated Learning", "Blockchain", "Spectrum Sensing"],
+      "links": {
+        "paper": "https://ieeexplore.ieee.org/document/10632809",
+        "project_page": "https://fiesta4spectrum.github.io",
+        "dataset": "https://www.kaggle.com/datasets/neutrinoliu/fiesta"
+      },
+      "media": {
+        "image": "media/fiesta.png"
+      }
+    },
+    {
+      "id": "machsim",
+      "title": "MachSim: A Speedy and Scalable Flow Simulator for Traffic Distribution Prediction in Datacenter Networks",
+      "year": 2024,
+      "affiliation": "ByteDance Internship",
+      "tags": ["Traffic Simulator", "Datacenter Network", "Scalability"],
+      "description": "A scalable flow simulator that models traffic distribution given network topology, forwarding rules, and flow inputs. Treats flows as a directed acyclic graph and uses local flow merging plus multiprocessing to simulate 500K flows across 100 switches in 15 seconds. Integrated into ByteDance network infrastructure to verify configuration updates before production rollout.",
+      "links": {}
+    },
+    {
+      "id": "meg",
+      "title": "MEG: A RISC-V-Based System Emulation Infrastructure for Near-Data Processing",
+      "authors": [
+        {"name": "Jialiang Zhang"},
+        {"name": "Yue Zha"},
+        {"name": "Nicholas Beckwith"},
+        {"name": "Bangya Liu", "is_me": true},
+        {"name": "Jing Li"}
+      ],
+      "venue": "ACM TRETS",
+      "year": 2020,
+      "status": "accepted",
+      "tags": ["RISC-V", "FPGA", "Near-Data Processing"],
+      "links": {
+        "paper": "https://dl.acm.org/doi/abs/10.1145/3409114"
+      }
+    },
+    {
+      "id": "rocket-chip-fpga",
+      "title": "Rocket-Chip FPGA Transplant",
+      "year": 2019,
+      "tags": ["FPGA", "RISC-V", "Linux"],
+      "description": "A Verilog wrapper for the Rocket-Chip project plus a Linux boot flow on the Digilent Nexys4DDR. Gives architects an accessible RISC-V platform to boot Linux and evaluate workloads on an affordable FPGA instead of a pure simulator. 137 stars / 29 forks on GitHub.",
+      "links": {
+        "github": "https://github.com/cnrv/fpga-rocket-chip"
+      }
+    }
+  ],
+  "honors": [
+    {
+      "title": "Reviewer",
+      "venue": "NeurIPS, ICLR, ICML, AAAI, ACMMM, 3DV, IROS, IEEE TCSVT"
+    },
+    {
+      "year": 2026,
+      "title": "Program Committee Member",
+      "venue": "CVPR End-to-End 3D Learning Workshop"
+    },
+    {
+      "year": 2025,
+      "title": "Top Reviewer",
+      "venue": "NeurIPS"
+    },
+    {
+      "year": 2023,
+      "title": "Program Committee Member",
+      "venue": "ACM S3 Workshop"
+    },
+    {
+      "year": 2017,
+      "title": "China National Scholarship",
+      "detail": "Top 2% — Ministry of Education of P.R. China"
+    },
+    {
+      "year": 2014,
+      "title": "First Prize — China National Olympiad in Mathematics (Provinces)"
+    },
+    {
+      "year": 2014,
+      "title": "First Prize — China National Olympiad in Informatics (Provinces)"
+    }
+  ]
+}
