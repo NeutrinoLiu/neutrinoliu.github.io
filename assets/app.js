@@ -210,19 +210,12 @@
       const video = p.media && p.media.video ? esc(p.media.video) : '';
       const image = p.media && p.media.image ? esc(p.media.image) : '';
       const hasMedia = !!(video || image);
-      const mediaHref = p.links?.project_page || p.links?.demo || p.links?.paper || video || image;
       const mediaInner = video
         ? `<video src="${video}" autoplay muted loop playsinline preload="metadata"></video>`
         : image
           ? `<img src="${image}" alt="${esc(p.title)}" loading="lazy" />`
           : '';
-      const mediaBlock = hasMedia ? `
-        <a class="pub__media"
-           href="${esc(mediaHref)}"
-           target="_blank" rel="noopener"
-           aria-label="${esc(p.title)} — open project page">
-          ${mediaInner}
-        </a>` : '';
+      const mediaBlock = hasMedia ? `<div class="pub__media">${mediaInner}</div>` : '';
       const body = `
         <div class="pub__body">
           ${head || star ? `<p class="pub__meta">${star}${head}</p>` : ''}
