@@ -34,9 +34,11 @@
   const main = document.querySelector('main');
 
   let data;
+  let lastModified = null;
   try {
     const res = await fetch('assets/cv.json', { cache: 'no-store' });
     if (!res.ok) throw new Error(res.statusText);
+    lastModified = res.headers.get('Last-Modified');
     data = await res.json();
   } catch (err) {
     main.innerHTML =
@@ -141,14 +143,14 @@
       ` : ''}
     </div>
     <div class="hero__title">${positionRows}</div>
-    <div class="hero__bio">
-      ${(profile.bio || []).map((p) => `<p>${linkify(p)}</p>`).join('')}
-    </div>
     ${(profile.research_interests || []).length ? `
       <div class="hero__interests">
         ${profile.research_interests.map((i) => `<span class="tag">${esc(i)}</span>`).join('')}
       </div>
     ` : ''}
+    <div class="hero__bio">
+      ${(profile.bio || []).map((p) => `<p>${linkify(p)}</p>`).join('')}
+    </div>
   `;
 
   /* ────── experience ────── */
@@ -254,9 +256,15 @@
   `;
 
   /* ────── footer ────── */
+  const updated = (() => {
+    if (!lastModified) return '';
+    const d = new Date(lastModified);
+    return isNaN(d) ? '' : d.toISOString().slice(0, 10);
+  })();
   document.getElementById('footer-copy').innerHTML =
     `Designed by <a href="https://neutrinoliu.github.io/" target="_blank" rel="noopener">${esc(profile.name)}</a> and Claude with ` +
-    `<i class="fa-solid fa-heart footer__heart" aria-label="love"></i>`;
+    `<i class="fa-solid fa-heart footer__heart" aria-label="love"></i>` +
+    (updated ? `&nbsp; Last updated ${updated}` : '');
 
   /* ────── active section highlight ────── */
   const navLinks = Array.from(document.querySelectorAll('.nav__links a[href^="#"]'));

@@ -174,7 +174,7 @@ h3 { font-size: 15.5px; line-height: 1.45; }
   color: var(--muted);
 }
 .hero__title {
-  margin: 0 0 24px;
+  margin: 0 0 8px;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -216,7 +216,7 @@ h3 { font-size: 15.5px; line-height: 1.45; }
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin: 8px 0 18px;
+  margin: 0 0 22px;
 }
 /* ──────────── publications ──────────── */
 .pub {
