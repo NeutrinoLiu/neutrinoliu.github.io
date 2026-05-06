@@ -22,9 +22,9 @@
       }
     ],
     "bio": [
-      "I work where 3D vision, video generation, and embodied AI feed into each other — getting models to see the geometry of a scene, imagine new versions of it, and act inside it through hands, robots, and vision-language-action policies.",
+      "I work where 3D vision, video generation, and embodied AI feed into each other, getting models to see the geometry of a scene, imagine new versions of it, and act inside it through hands, robots, and vision-language-action policies.",
       "I'm finishing up my Ph.D. at the [MadNets](https://madnets.cs.wisc.edu/) Lab (originally WiNGS) at UW–Madison, advised by [Prof. Suman Banerjee](https://pages.cs.wisc.edu/~suman/), where I bounce between video DiTs, Gaussian splats, and the network plumbing underneath.",
-      "Always happy to chat — drop a note about anything."
+      "Always happy to chat. Drop a note about anything."
     ],
     "research_interests": [
       "Embodied AI",
@@ -70,14 +70,14 @@
     },
     {
       "role": "PhD MLE Intern",
-      "org": "ByteDance — E-Commerce R&D",
+      "org": "ByteDance, E-Commerce R&D",
       "location": "San Jose, CA",
       "start": "May 2025",
       "end": "Nov 2025"
     },
     {
       "role": "PhD SDE Intern",
-      "org": "ByteDance — Networking R&D",
+      "org": "ByteDance, Networking R&D",
       "location": "San Jose, CA",
       "start": "May 2024",
       "end": "Aug 2024"
@@ -114,7 +114,7 @@
       "status": "ongoing",
       "affiliation": "2077AI",
       "tags": ["Hand Pose", "ViT", "Vision Foundation Model", "Embodied AI"],
-      "description": "Designing and training a vision foundation model that ingests arbitrary combinations of inputs (RGB, depth, intrinsics, extrinsics, hand masks, wrist views, …) and regresses metrically accurate hand meshes in world coordinates. Unlike prior RGB-only weak-perspective methods that output only root-aligned poses, this work targets absolute MPJPE to support VLA co-training. Adopts a MapAnything-style end-to-end architecture with a MANO head, trained at scale on multiple datasets.",
+      "description": "A vision foundation model that maps arbitrary RGB, depth, mask, or multi-view inputs to metric hand meshes in world coordinates. Targets absolute-pose accuracy for VLA co-training, with a MapAnything-style backbone and a MANO head.",
       "links": {}
     },
     {
@@ -123,7 +123,7 @@
       "status": "ongoing",
       "affiliation": "2077AI",
       "tags": ["LLM Agents", "Cybersecurity", "LLM Arena", "Benchmark"],
-      "description": "Building a live-combat evaluation environment where attacker and defender agents fight over a shared simulated sandbox under partial observability, moving beyond static CTF benchmarks. Proposes the Defend/Attack Token Ratio (DATR), the first token-level metric quantifying offense/defense economic asymmetry. Empirically tests the “cybersecurity as proof-of-work” thesis across model capability tiers.",
+      "description": "A live-combat sandbox where attacker and defender LLM agents fight under partial observability, going past static CTF benchmarks. We propose the Defend/Attack Token Ratio (DATR), a token-level metric capturing offense/defense economic asymmetry across model tiers.",
       "links": {}
     },
     {
@@ -145,7 +145,7 @@
       "status": "accepted",
       "affiliation": "ByteDance Internship",
       "tags": ["HOI", "DiT", "3D Reconstruction", "Wan2.1"],
-      "description": "Built a human–object interaction video generation model on top of Wan2.1 with realistic human dynamics and diverse object viewpoint synthesis. Curated large-scale open-source hand-object interaction datasets to train the DiT, and introduced a geometry-aware conditioning mechanism that combines multi-view object reference images with relative coordinate maps for consistent generation across viewpoints.",
+      "description": "A human-object interaction video generator built on Wan2.1, trained on a curated open-source HOI corpus. Adds geometry-aware conditioning that fuses multi-view object references with relative coordinate maps for viewpoint-consistent synthesis.",
       "links": {
         "paper": "https://arxiv.org/abs/2512.22854",
         "project_page": "https://neutrinoliu.github.io/byteloom/"
@@ -164,7 +164,7 @@
       "year": 2024,
       "status": "arxiv",
       "tags": ["Gaussian Splatting", "Volumetric Video"],
-      "description": "A streaming-friendly framework for training, delivering, and rendering volumetric video in real time. Combines spacetime Gaussian with Markov-Chain Monte Carlo to adapt the model across 3D scenes and frames, and uses a sliding window to capture per-frame Gaussian snapshots in a continuous training loop — removing the duration limits of prior dynamic 3DGS approaches.",
+      "description": "Streaming-friendly training, delivery, and rendering of volumetric video. Combines spacetime Gaussians with MCMC and a sliding window of per-frame snapshots, removing the duration limits of prior dynamic 3DGS.",
       "links": {
         "paper": "https://arxiv.org/abs/2409.07759",
         "demo": "https://swingsplat.github.io/demo/"
@@ -188,7 +188,7 @@
       "year": 2026,
       "status": "arxiv",
       "tags": ["SLAM", "Transformer", "Geometry Scoring"],
-      "description": "Proposed LeanGate, a lightweight feed-forward frame-gating network for transformer-based monocular SLAM. Predicts a per-frame geometric utility score before the heavy geometry foundation model stage, bypassing over 90% of redundant frames; reduces tracking FLOPs by >85% and yields a 5× end-to-end throughput speedup while preserving the accuracy of dense baselines.",
+      "description": "LeanGate, a feed-forward frame-gating network for transformer-based monocular SLAM. Scores each frame's geometric utility before the heavy GFM stage and skips over 90% of redundant frames, cutting >85% of FLOPs and giving a 5× throughput speedup at dense-baseline accuracy.",
       "links": {
         "paper": "https://arxiv.org/abs/2604.08718",
         "project_page": "https://lean-gate.github.io/"
@@ -211,7 +211,7 @@
       "year": 2026,
       "status": "accepted",
       "tags": ["VLM", "3D Spatial Reasoning", "Geometry Foundation Model"],
-      "description": "A hierarchical fusion framework that aligns multi-level geometric features with language backbones for 3D spatial reasoning in VLMs. Unlike prior work that fuses only deep-layer features and discards rich hierarchical signals, SpatialStack progressively stacks features across multiple model depths to jointly capture fine-grained local geometry and broader contextual semantics. The resulting VLM-SpatialStack achieves state-of-the-art performance across multiple 3D spatial reasoning benchmarks.",
+      "description": "A hierarchical fusion framework that aligns multi-level geometric features with language backbones for 3D spatial reasoning in VLMs. Captures both fine local geometry and broader semantics, with strong results across multiple benchmarks.",
       "links": {
         "paper": "https://arxiv.org/abs/2603.27437",
         "project_page": "https://spatial-stack.github.io/"
@@ -237,6 +237,7 @@
       "year": 2026,
       "status": "arxiv",
       "tags": ["World Model", "Egocentric", "HOI"],
+      "description": "An egocentric world model that synthesizes photo-realistic hand-object interaction videos from a first-person view. Bridges generative world-model priors with embodied scene understanding to produce VLA-friendly training data.",
       "links": {
         "paper": "https://arxiv.org/abs/2603.13615",
         "project_page": "https://egohoi.github.io/"
@@ -262,6 +263,7 @@
       "year": 2026,
       "status": "accepted",
       "tags": ["Video Generation", "Camera Control", "Tokenizer"],
+      "description": "A camera-controllable video generator built on a consistent, extensible token representation. Enables precise camera trajectory steering while keeping scene content stable across long, viewpoint-varying shots.",
       "links": {
         "paper": "https://arxiv.org/abs/2512.19020",
         "project_page": "https://sjtuytc.github.io/CETCam_project_page.github.io/"
@@ -283,6 +285,7 @@
       "year": 2026,
       "status": "accepted",
       "tags": ["Multi-View", "Subject Consistency", "Video Generation"],
+      "description": "A multi-view-aware video generator that keeps subject identity coherent across viewpoints. Turns a few subject references into temporally stable, viewpoint-consistent video without per-subject finetuning.",
       "links": {
         "paper": "https://arxiv.org/abs/2601.17756",
         "project_page": "https://szy-young.github.io/mv-s2v"
@@ -314,6 +317,7 @@
       "year": 2026,
       "status": "arxiv",
       "tags": ["Benchmark", "Video Editing", "Visual Effects"],
+      "description": "A benchmark spanning generic video editing and VFX, covering object, style, and motion edits alongside complex visual effects. Provides paired references and human-aligned metrics for fair cross-model evaluation.",
       "links": {
         "paper": "https://arxiv.org/abs/2604.16272",
         "project_page": "https://xiangbogaobarry.github.io/VEFX-Bench/"
@@ -336,6 +340,7 @@
       "year": 2026,
       "status": "accepted",
       "tags": ["V2V", "Cooperative Perception", "Foundation Models"],
+      "description": "A V2V cooperative perception scheme that shares raw spatial sensor data without leaking sensitive identifiers. Uses foundation-model-driven scrubbing to preserve scene geometry while removing privacy-revealing content.",
       "links": {
         "paper": "https://arxiv.org/pdf/2512.16265"
       },
@@ -362,6 +367,7 @@
       "year": 2025,
       "status": "accepted",
       "tags": ["World Foundation Model", "Test-Time Scaling"],
+      "description": "Investigates whether test-time scaling, well-known for lifting LLM reasoning, also helps world foundation models. Proposes SWIFT, a training-free strategy that improves video generation fidelity by allocating extra compute at inference.",
       "links": {
         "paper": "https://arxiv.org/pdf/2503.24320",
         "project_page": "https://scalingwfm.github.io/"
@@ -384,6 +390,7 @@
       "year": 2026,
       "status": "accepted",
       "tags": ["Federated Learning", "Blockchain", "Spectrum Sensing"],
+      "description": "A federated learning framework for crowdsensed spectrum data with blockchain-backed incentives, sustaining long-term participation across distributed sensors while protecting raw measurements from leakage.",
       "links": {
         "paper": "https://ieeexplore.ieee.org/document/10632809",
         "project_page": "https://fiesta4spectrum.github.io",
@@ -399,7 +406,7 @@
       "year": 2024,
       "affiliation": "ByteDance Internship",
       "tags": ["Traffic Simulator", "Datacenter Network", "Scalability"],
-      "description": "A scalable flow simulator that models traffic distribution given network topology, forwarding rules, and flow inputs. Treats flows as a directed acyclic graph and uses local flow merging plus multiprocessing to simulate 500K flows across 100 switches in 15 seconds. Integrated into ByteDance network infrastructure to verify configuration updates before production rollout.",
+      "description": "A scalable datacenter-network flow simulator. Treats flows as a DAG with local merging and multiprocessing, hitting 500K flows across 100 switches in 15s. Used inside ByteDance to verify config updates before rollout.",
       "links": {}
     },
     {
@@ -425,7 +432,7 @@
       "title": "Rocket-Chip FPGA Transplant",
       "year": 2019,
       "tags": ["FPGA", "RISC-V", "Linux"],
-      "description": "A Verilog wrapper for the Rocket-Chip project plus a Linux boot flow on the Digilent Nexys4DDR. Gives architects an accessible RISC-V platform to boot Linux and evaluate workloads on an affordable FPGA instead of a pure simulator. 137 stars / 29 forks on GitHub.",
+      "description": "A Verilog wrapper for Rocket-Chip plus a Linux boot flow on the Digilent Nexys4DDR, an affordable RISC-V platform for booting Linux and evaluating workloads without a pure simulator. 137★ / 29 forks on GitHub.",
       "links": {
         "github": "https://github.com/cnrv/fpga-rocket-chip"
       }
@@ -454,15 +461,7 @@
     {
       "year": 2017,
       "title": "China National Scholarship",
-      "detail": "Top 2% — Ministry of Education of P.R. China"
-    },
-    {
-      "year": 2014,
-      "title": "First Prize — China National Olympiad in Mathematics (Provinces)"
-    },
-    {
-      "year": 2014,
-      "title": "First Prize — China National Olympiad in Informatics (Provinces)"
+      "detail": "Top 2%, Ministry of Education of P.R. China"
     }
   ]
 }
