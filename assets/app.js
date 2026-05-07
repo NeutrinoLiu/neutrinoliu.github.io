@@ -25,6 +25,15 @@
       }
       link.type = 'image/svg+xml';
       link.href = dataUrl;
+
+      const brand = document.querySelector('.nav__brand');
+      if (brand) {
+        const brandSvg = svg.replace(
+          '<svg ',
+          '<svg class="nav__brand-icon" fill="currentColor" aria-hidden="true" '
+        );
+        brand.insertAdjacentHTML('afterbegin', brandSvg);
+      }
     })
     .catch(() => {});
 })();

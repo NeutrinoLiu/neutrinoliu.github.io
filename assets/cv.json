@@ -23,7 +23,7 @@
     ],
     "bio": [
       "I work where 3D vision, video generation, and embodied AI feed into each other, getting models to see the geometry of a scene, imagine new versions of it, and act inside it through hands, robots, and vision-language-action policies.",
-      "I'm finishing up my Ph.D. at the [MadNets](https://madnets.cs.wisc.edu/) Lab (originally WiNGS) at UW–Madison, advised by [Prof. Suman Banerjee](https://pages.cs.wisc.edu/~suman/), where I bounce between video DiTs, Gaussian splats, and the network plumbing underneath.",
+      "I'm finishing up my Ph.D. at the [MadNets](https://madnets.cs.wisc.edu/) Lab (originally WiNGS) at UW–Madison, advised by [Prof. Suman Banerjee](https://pages.cs.wisc.edu/~suman/), where I bounce between video DiTs, Gaussian splats, and the network plumbing underneath. I've also been fortunate to work closely with [Prof. Zhiwen Fan](https://zhiwenfan.github.io/) at [PHAI Lab](https://phai-lab.github.io/), whose mentorship has shaped much of my thinking on 3D vision.",
       "Always happy to chat. Drop a note about anything."
     ],
     "research_interests": [
@@ -170,7 +170,7 @@
         "demo": "https://swingsplat.github.io/demo/"
       },
       "media": {
-        "image": "media/swings.png"
+        "video": "media/swings.mp4"
       }
     },
     {
