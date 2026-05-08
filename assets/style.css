@@ -431,13 +431,16 @@ footer {
   gap: 6px;
   text-align: center;
 }
-.footer__inner a { color: var(--muted); }
+.footer__inner a,
+.footer__inner a:hover { color: inherit; }
 .footer__heart {
   color: var(--soft);
   margin-left: 2px;
   font-size: 11px;
   vertical-align: 1px;
 }
+.footer__visitors,
+.footer__visitors:hover { text-decoration: none; }
 
 /* ──────────── mobile ──────────── */
 @media (max-width: 600px) {

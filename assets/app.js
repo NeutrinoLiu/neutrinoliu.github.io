@@ -280,7 +280,8 @@
       const { total_hits } = await res.json();
       if (typeof total_hits === 'number') {
         const slot = document.getElementById('footer-stats');
-        if (slot) slot.textContent = ` · ${total_hits.toLocaleString()} visitors`;
+        if (slot) slot.innerHTML =
+          ` · <a class="footer__visitors" href="https://cloud.umami.is/share/tYjZrvKVy6hGP3sB" target="_blank" rel="noopener">${total_hits.toLocaleString()} visitors</a>`;
       }
     } catch (_) { /* silent */ }
   })();
