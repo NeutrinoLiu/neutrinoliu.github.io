@@ -281,7 +281,7 @@
       if (typeof total_hits === 'number') {
         const slot = document.getElementById('footer-stats');
         if (slot) slot.innerHTML =
-          ` · <a class="footer__visitors" href="https://cloud.umami.is/share/tYjZrvKVy6hGP3sB" target="_blank" rel="noopener">${total_hits.toLocaleString()} visitors</a>`;
+          ` · <a class="footer__visitors" href="https://cloud.umami.is/share/tYjZrvKVy6hGP3sB" target="_blank" rel="noopener">${total_hits.toLocaleString()} views</a>`;
       }
     } catch (_) { /* silent */ }
   })();
