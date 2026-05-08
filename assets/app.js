@@ -266,7 +266,30 @@
   document.getElementById('footer-copy').innerHTML =
     `Designed by <a href="https://neutrinoliu.github.io/" target="_blank" rel="noopener">${esc(profile.name)}</a> and Claude with ` +
     `<i class="fa-solid fa-heart footer__heart" aria-label="love"></i>` +
-    (updated ? `&nbsp; Last updated ${updated}` : '');
+    (updated ? `&nbsp; Last updated ${updated}` : '') +
+    `<span id="footer-stats"></span>`;
+
+  /* ────── visitor counter (umami share, best effort) ────── */
+  (async () => {
+    const SHARE_ID = 'tYjZrvKVy6hGP3sB';
+    const API_BASE = 'https://cloud.umami.is/analytics/us/api';
+    try {
+      const shareRes = await fetch(`${API_BASE}/share/${SHARE_ID}`);
+      if (!shareRes.ok) return;
+      const { websiteId, token } = await shareRes.json();
+      const statsRes = await fetch(
+        `${API_BASE}/websites/${websiteId}/stats?startAt=0&endAt=${Date.now()}`,
+        { headers: { Authorization: `Bearer ${token}` } }
+      );
+      if (!statsRes.ok) return;
+      const s = await statsRes.json();
+      const v = s && s.visitors && s.visitors.value;
+      if (typeof v === 'number') {
+        const slot = document.getElementById('footer-stats');
+        if (slot) slot.textContent = ` · ${v.toLocaleString()} visitors`;
+      }
+    } catch (_) { /* silent fail on CORS or network */ }
+  })();
 
   /* ────── active section highlight ────── */
   const navLinks = Array.from(document.querySelectorAll('.nav__links a[href^="#"]'));
