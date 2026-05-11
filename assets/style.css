@@ -249,7 +249,7 @@ h3 { font-size: 15.5px; line-height: 1.45; }
   overflow: hidden;
   background: #f4f4f4;
   border: 1px solid var(--hair);
-  border-radius: 2px;
+  border-radius: 6px;
   text-decoration: none;
 }
 .pub__media video,
