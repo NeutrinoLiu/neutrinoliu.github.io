@@ -107,6 +107,14 @@
     return parts.join(' · ');
   };
 
+  /* ────── banner ────── */
+  const bannerEl = document.getElementById('banner');
+  if (data.announcement && bannerEl) {
+    bannerEl.innerHTML =
+      `<div class="banner__inner">${linkify(data.announcement)}</div>`;
+    bannerEl.classList.add('banner');
+  }
+
   /* ────── about ────── */
   const profile = data.profile;
   document.title = `${profile.name} — ${profile.alias || 'Research'}`;
