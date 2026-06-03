@@ -136,7 +136,6 @@
     L.github         && { href: L.github,                      icon: 'fa-brands fa-github',         label: 'GitHub' },
     L.linkedin       && { href: L.linkedin,                    icon: 'fa-brands fa-linkedin',       label: 'LinkedIn' },
     L.cv_pdf         && { href: L.cv_pdf,                      icon: 'fa-regular fa-file-lines',    label: 'CV' },
-    L.bangumi        && { href: L.bangumi,                    icon: 'fa-brands fa-bilibili',       label: 'Bangumi' },
   ].filter(Boolean);
 
   document.getElementById('about').innerHTML = `
