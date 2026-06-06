@@ -128,6 +128,28 @@
       "links": {}
     },
     {
+      "id": "more",
+      "title": "Behavior Uncloning: Distilling Mode Redirection into Policy Weights without Inference-Time Steering",
+      "authors": [
+        {"name": "Hao Wang"},
+        {"name": "Jiuzhou Lei"},
+        {"name": "Dayou Li"},
+        {"name": "Bangya Liu", "is_me": true},
+        {"name": "Minghui Zheng"},
+        {"name": "Manling Li"},
+        {"name": "Ruohan Zhang"},
+        {"name": "Zhiwen Fan"}
+      ],
+      "year": 2026,
+      "status": "in_submission",
+      "tags": ["Embodied AI", "VLA", "Diffusion Policy"],
+      "description": "MoRE (Mode Redirection) suppresses unsafe behavior modes in behavior-cloned policies via a short \"uncloning\" step that distills a mode classifier's redirection signal into the policy weights, with zero inference-time overhead. Improves deployment success rate by 43 points across eight tasks, generalizing across Diffusion Policy and VLA backbones.",
+      "links": {},
+      "media": {
+        "video": "media/moRE.mp4"
+      }
+    },
+    {
       "id": "byteloom",
       "title": "ByteLOOM: Weaving Geometry-Consistent Human-Object Interactions Videos through Progressive Curriculum Learning",
       "authors": [
@@ -263,7 +285,7 @@
       "venue": "CVPR Findings",
       "year": 2026,
       "status": "accepted",
-      "tags": ["Video Generation", "Camera Control", "Tokenizer"],
+      "tags": ["Video Generation", "Camera Control", "Vision Foundation Model"],
       "description": "A camera-controllable video generator built on a consistent, extensible token representation. Enables precise camera trajectory steering while keeping scene content stable across long, viewpoint-varying shots.",
       "links": {
         "paper": "https://arxiv.org/abs/2512.19020",
@@ -285,7 +307,7 @@
       "venue": "SIGGRAPH",
       "year": 2026,
       "status": "accepted",
-      "tags": ["Multi-View", "Subject Consistency", "Video Generation"],
+      "tags": ["Multi-View", "S2V", "Video Generation", "Vision Foundation Model"],
       "description": "A multi-view-aware video generator that keeps subject identity coherent across viewpoints. Turns a few subject references into temporally stable, viewpoint-consistent video without per-subject finetuning.",
       "links": {
         "paper": "https://arxiv.org/abs/2601.17756",
@@ -317,7 +339,7 @@
       ],
       "year": 2026,
       "status": "arxiv",
-      "tags": ["Benchmark", "Video Editing", "Visual Effects"],
+      "tags": ["Benchmark", "Video Editing", "Reward Model"],
       "description": "A benchmark spanning generic video editing and VFX, covering object, style, and motion edits alongside complex visual effects. Provides paired references and human-aligned metrics for fair cross-model evaluation.",
       "links": {
         "paper": "https://arxiv.org/abs/2604.16272",
