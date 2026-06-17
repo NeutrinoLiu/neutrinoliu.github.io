@@ -208,8 +208,9 @@
         {"name": "Suman Banerjee"},
         {"name": "Zhiwen Fan"}
       ],
+      "venue": "IROS",
       "year": 2026,
-      "status": "arxiv",
+      "status": "accepted",
       "tags": ["SLAM", "Transformer", "Geometry Scoring"],
       "description": "LeanGate, a feed-forward frame-gating network for transformer-based monocular SLAM. Scores each frame's geometric utility before the heavy GFM stage and skips over 90% of redundant frames, cutting >85% of FLOPs and giving a 5× throughput speedup at dense-baseline accuracy.",
       "links": {
