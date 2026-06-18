@@ -1,5 +1,5 @@
 {
-  "announcement": "♫ Our project [LeanGate](https://lean-gate.github.io/) has been accepted at IROS 2026. Thanks to all our collaborators!",
+  "announcement": "♫ [LeanGate](https://lean-gate.github.io/) accepted at IROS 2026, and [ByteLOOM](https://neutrinoliu.github.io/byteloom/) & [EgoHOI](https://egohoi.github.io/) accepted at ECCV 2026. Thanks to all our collaborators!",
   "profile": {
     "name": "Bangya Liu",
     "name_zh": "刘邦亚",
@@ -163,7 +163,7 @@
         {"name": "Suman Banerjee"},
         {"name": "Hao Zhang"}
       ],
-      "venue": "arXiv",
+      "venue": "ECCV",
       "year": 2026,
       "status": "accepted",
       "affiliation": "ByteDance Internship",
@@ -258,8 +258,9 @@
         {"name": "Chenyu You"},
         {"name": "Zhiwen Fan", "corresponding": true}
       ],
+      "venue": "ECCV",
       "year": 2026,
-      "status": "arxiv",
+      "status": "accepted",
       "tags": ["World Model", "Egocentric", "HOI"],
       "description": "An egocentric world model that synthesizes photo-realistic hand-object interaction videos from a first-person view. Bridges generative world-model priors with embodied scene understanding to produce VLA-friendly training data.",
       "links": {
