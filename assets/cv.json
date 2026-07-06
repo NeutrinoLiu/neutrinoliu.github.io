@@ -144,7 +144,10 @@
       "status": "in_submission",
       "tags": ["Embodied AI", "VLA", "Diffusion Policy"],
       "description": "MoRE (Mode Redirection) suppresses unsafe behavior modes in behavior-cloned policies via a short \"uncloning\" step that distills a mode classifier's redirection signal into the policy weights, with zero inference-time overhead. Improves deployment success rate by 43 points across eight tasks, generalizing across Diffusion Policy and VLA backbones.",
-      "links": {},
+      "links": {
+        "paper": "https://arxiv.org/abs/2606.29201",
+        "project_page": "https://behavior-uncloning.github.io/"
+      },
       "media": {
         "video": "media/moRE.mp4"
       }
