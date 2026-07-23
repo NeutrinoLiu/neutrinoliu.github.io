@@ -4,7 +4,7 @@
     "name": "Bangya Liu",
     "name_zh": "刘邦亚",
     "alias": "Neutrino",
-    "title": "Member of Technical Staff, Abaka.ai | Research Scientist, 2077AI Open Source Foundation | Ph.D. Candidate, ECE @ UW–Madison",
+    "title": "Member of Technical Staff, Abaka.ai | Research Scientist, 2077AI Open Source Foundation | Ph.D., ECE @ UW–Madison",
     "current_positions": [
       {
         "role": "Member of Technical Staff",
@@ -17,15 +17,14 @@
         "url": "https://2077ai.com"
       },
       {
-        "role": "Ph.D. Candidate",
+        "role": "Ph.D.",
         "org": "UW–Madison",
         "url": "https://www.engr.wisc.edu/department/electrical-computer-engineering/"
       }
     ],
     "bio": [
-      "I work where 3D vision, video generation, and embodied AI feed into each other, getting models to see the geometry of a scene, imagine new versions of it, and act inside it through hands, robots, and vision-language-action policies.",
-      "I'm finishing up my Ph.D. at the [MadNets](https://madnets.cs.wisc.edu/) Lab (originally WiNGS) at UW–Madison, advised by [Prof. Suman Banerjee](https://pages.cs.wisc.edu/~suman/), where I bounce between video DiTs, Gaussian splats, and the network plumbing underneath. I've also been fortunate to work closely with [Prof. Zhiwen Fan](https://zhiwenfan.github.io/) at [PHAI Lab](https://phai-lab.github.io/), whose mentorship has shaped much of my thinking on 3D vision.",
-      "Always happy to chat. Drop a note about anything."
+      "I work where 3D vision, video generation, and embodied AI feed into each other: teaching models to read the geometry of a scene, imagine new versions of it, and act inside it through hands and robots.",
+      "I finished my Ph.D. at the [MadNets](https://madnets.cs.wisc.edu/) Lab (originally WiNGS) at UW–Madison in 2026, advised by [Prof. Suman Banerjee](https://pages.cs.wisc.edu/~suman/), moving between video DiTs, Gaussian splats, and the networking systems they run on. I've also been fortunate to work closely with [Prof. Zhiwen Fan](https://zhiwenfan.github.io/) at [PHAI Lab](https://phai-lab.github.io/), whose mentorship shaped much of how I think about 3D vision."
     ],
     "research_interests": [
       "Embodied AI",
