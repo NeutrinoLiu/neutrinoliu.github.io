@@ -1,5 +1,5 @@
 {
-  "announcement": "♫ [MV-S2V](https://szy-young.github.io/mv-s2v) accepted at SIGGRAPH 2026. I'm in Los Angeles attending the conference, come say hi! 🍻",
+  "announcement": "♫ [Behavior Uncloning](https://behavior-uncloning.github.io/) accepted at CoRL 2026. Thanks to all our collaborators!",
   "profile": {
     "name": "Bangya Liu",
     "name_zh": "刘邦亚",
@@ -139,8 +139,9 @@
         {"name": "Ruohan Zhang"},
         {"name": "Zhiwen Fan"}
       ],
+      "venue": "CoRL",
       "year": 2026,
-      "status": "in_submission",
+      "status": "accepted",
       "tags": ["Embodied AI", "VLA", "Diffusion Policy"],
       "description": "MoRE (Mode Redirection) suppresses unsafe behavior modes in behavior-cloned policies via a short \"uncloning\" step that distills a mode classifier's redirection signal into the policy weights, with zero inference-time overhead. Improves deployment success rate by 43 points across eight tasks, generalizing across Diffusion Policy and VLA backbones.",
       "links": {
