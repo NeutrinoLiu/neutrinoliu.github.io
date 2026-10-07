@@ -1,5 +1,5 @@
 {
-  "announcement": "♫ [Behavior Uncloning](https://behavior-uncloning.github.io/) accepted at CoRL 2026. Thanks to all our collaborators!",
+  "announcement": "♫ [ENCORE](https://yifank.github.io/encore/) accepted as an oral at WRL@NeurIPS 2026. Congrats to Yifan and the team!",
   "profile": {
     "name": "Bangya Liu",
     "name_zh": "刘邦亚",
@@ -105,7 +105,7 @@
     }
   ],
   "highlights": [
-    "omnihamer", "cyberarena", "byteloom", "swings", "transformer-slam", "spatialstack"
+    "cyberarena", "touchscale", "encore", "more"
   ],
   "projects": [
     {
@@ -120,11 +120,72 @@
     {
       "id": "cyberarena",
       "title": "CyberArena: Adversarial Cybersecurity Arena for LLM Coding Agents",
-      "status": "ongoing",
+      "authors": [
+        {"name": "Bangya Liu", "is_me": true},
+        {"name": "Jianhong Tu"},
+        {"name": "Yueyang Pan"},
+        {"name": "Hanhong Zhao"},
+        {"name": "…"},
+        {"name": "Tianneng Shi"},
+        {"name": "Zhun Wang"},
+        {"name": "Chenguang Wang"},
+        {"name": "Dawn Song"}
+      ],
+      "year": 2026,
+      "status": "in_submission",
       "affiliation": "2077AI",
       "tags": ["LLM Agents", "Cybersecurity", "LLM Arena", "Benchmark"],
-      "description": "A live-combat sandbox where attacker and defender LLM agents fight under partial observability, going past static CTF benchmarks. We propose the Defend/Attack Token Ratio (DATR), a token-level metric capturing offense/defense economic asymmetry across model tiers.",
-      "links": {}
+      "description": "An attack-defense CTF benchmark where the adversary is the benchmark. Two agents host identical vulnerable services and, over multiple rounds, exploit each other's service while patching their own. A dynamical latent-ability model places offense, defense, and challenge difficulty on one reference scale.",
+      "links": {
+        "project_page": "https://cyber-arena.ai/"
+      },
+      "media": {"video": "media/cyberarena.mp4"}
+    },
+    {
+      "id": "touchscale",
+      "title": "TouchScale: 500 Hours of Human Vision and Touch for Visual-Tactile Learning",
+      "authors": [
+        {"name": "Dayou Li"},
+        {"name": "Hao Wang"},
+        {"name": "Qianqian Yang"},
+        {"name": "Zihao Zhu"},
+        {"name": "…"},
+        {"name": "Bangya Liu", "is_me": true},
+        {"name": "…"},
+        {"name": "Zhiwen Fan"}
+      ],
+      "year": 2026,
+      "status": "in_submission",
+      "tags": ["Embodied AI", "Tactile Sensing", "Dataset", "Dexterous Manipulation"],
+      "description": "A 500-hour dataset of synchronized human vision and touch, captured with a head-mounted RGB-D camera, two wrist cameras, and bimanual tactile gloves with 880 taxels each. Mid-training on TouchScale lifts robot task success from 22.5% to 57.5% across four contact-rich tasks and improves zero-shot contact prediction by 35.1%.",
+      "links": {
+        "project_page": "https://touch-scale.github.io/",
+        "code": "https://github.com/phai-lab/touchscale",
+        "dataset": "https://huggingface.co/datasets/2077AIDataFoundation/TouchScale"
+      },
+      "media": {"image": "https://touch-scale.github.io/assets/images/paper/data-collection.svg?v=public-release-1"}
+    },
+    {
+      "id": "encore",
+      "title": "ENCORE: Few-Shot Agentic Discovery of Manipulation Strategies",
+      "authors": [
+        {"name": "Yifan Kang"},
+        {"name": "Zihan Wang"},
+        {"name": "Zhiwen Fan"},
+        {"name": "Bangya Liu", "is_me": true}
+      ],
+      "venue": "WRL@NeurIPS",
+      "year": 2026,
+      "status": "accepted",
+      "affiliation": "2077AI",
+      "tags": ["Embodied AI", "LLM Agents", "Robot Manipulation"],
+      "description": "Coding agents that discover manipulation strategies from a few demonstrations. Each demo is distilled into multi-view keyframes, gripper events, and the full trajectory, which the agent uses to write and refine a policy program. Reaches 96.3% success on LIBERO-PRO and 9/10 on real-robot handover and cup inversion.",
+      "links": {
+        "paper": "https://arxiv.org/abs/2609.37359",
+        "project_page": "https://yifank.github.io/encore/",
+        "code": "https://github.com/YIFANK/encore"
+      },
+      "media": {"video": "https://yifank.github.io/encore/media/teaser.mp4"}
     },
     {
       "id": "more",
