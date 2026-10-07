@@ -1,5 +1,5 @@
 {
-  "announcement": "♫ [ENCORE](https://yifank.github.io/encore/) accepted as an oral at WRL@NeurIPS 2026. Congrats to Yifan and the team!",
+  "announcement": "♫ [AnaDiffusion](https://anadiffusion.github.io/) accepted at NeurIPS 2026, and [ENCORE](https://yifank.github.io/encore/) accepted as an oral at WRL@NeurIPS 2026. Congrats to all our collaborators!",
   "profile": {
     "name": "Bangya Liu",
     "name_zh": "刘邦亚",
@@ -214,6 +214,31 @@
       "media": {
         "video": "https://behavior-uncloning.github.io/assets/videos/overview.mp4"
       }
+    },
+    {
+      "id": "anadiffusion",
+      "title": "AnaDiffusion: Anatomically Compositional Latent Diffusion for Controllable 3D Brain MRI Generation",
+      "authors": [
+        {"name": "Huiwen Han", "equal_contribution": true},
+        {"name": "Lulin Liu", "equal_contribution": true},
+        {"name": "Bangya Liu", "is_me": true},
+        {"name": "Yuanhao Cai"},
+        {"name": "…"},
+        {"name": "Shuiwang Ji"},
+        {"name": "Degui Zhi"},
+        {"name": "Zhiwen Fan"}
+      ],
+      "venue": "NeurIPS",
+      "year": 2026,
+      "status": "accepted",
+      "tags": ["Medical Imaging", "Latent Diffusion", "3D Generation"],
+      "description": "A compositional latent diffusion model for 3D brain MRI. It generates anatomical parts (left and right hemispheres, cerebellum and brainstem), assembles them into a whole-brain scaffold, and refines the full volume. Improves regional fidelity over monolithic baselines and lets one part be edited while the rest of the brain stays stable.",
+      "links": {
+        "paper": "https://arxiv.org/abs/2608.23014",
+        "project_page": "https://anadiffusion.github.io/",
+        "code": "https://github.com/phai-lab/AnaDiffusion"
+      },
+      "media": {"video": "media/anadiffusion.mp4"}
     },
     {
       "id": "byteloom",
