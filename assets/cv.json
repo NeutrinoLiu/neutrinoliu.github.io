@@ -119,7 +119,7 @@
     },
     {
       "id": "cyberarena",
-      "title": "CyberArena: Adversarial Cybersecurity Arena for LLM Coding Agents",
+      "title": "CyberArena: Benchmarking AI Agents in Live Symmetric Attack-and-Defense Combat",
       "authors": [
         {"name": "Bangya Liu", "is_me": true},
         {"name": "Jianhong Tu"},
@@ -137,7 +137,9 @@
       "tags": ["LLM Agents", "Cybersecurity", "LLM Arena", "Benchmark"],
       "description": "An attack-defense CTF benchmark where the adversary is the benchmark. Two agents host identical vulnerable services and, over multiple rounds, exploit each other's service while patching their own. A dynamical latent-ability model places offense, defense, and challenge difficulty on one reference scale.",
       "links": {
-        "project_page": "https://cyber-arena.ai/"
+        "paper": "https://arxiv.org/abs/2610.19005",
+        "project_page": "https://cyber-arena.ai/",
+        "code": "https://github.com/cyber-arena-ai/cyber-arena"
       },
       "media": {"video": "media/cyberarena.mp4"}
     },
