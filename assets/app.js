@@ -215,7 +215,7 @@
   const highlightSet = new Set(data.highlights || []);
   document.getElementById('projects').innerHTML = `
     <h2 class="section-title">Projects</h2>
-    ${(data.projects || []).map((p) => {
+    ${(data.projects || []).filter((p) => !p.hidden).map((p) => {
       const meta = renderPubMeta(p);
       const aff = p.affiliation ? esc(p.affiliation) : '';
       const links = renderLinkRow(p.links, ' · ');

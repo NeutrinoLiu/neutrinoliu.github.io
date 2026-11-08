@@ -1,5 +1,5 @@
 {
-  "announcement": "♫ [AnaDiffusion](https://anadiffusion.github.io/) accepted at NeurIPS 2026, and [ENCORE](https://yifank.github.io/encore/) accepted as an oral at WRL@NeurIPS 2026. Congrats to all our collaborators!",
+  "announcement": "♫ I'm at CoRL 2026, come say hi! 🍻 Catch [Behavior Uncloning](https://behavior-uncloning.github.io/) in the main conference, [ENCORE](https://yifank.github.io/encore/) at WAR, [TouchScale](https://touch-scale.github.io/) at Scaling H2R, and [TouchTwin](https://touchtwin.github.io/) in Late-Breaking Results.",
   "profile": {
     "name": "Bangya Liu",
     "name_zh": "刘邦亚",
@@ -105,13 +105,14 @@
     }
   ],
   "highlights": [
-    "cyberarena", "touchscale", "encore", "more"
+    "cyberarena", "touchtwin", "touchscale", "encore", "more"
   ],
   "projects": [
     {
       "id": "omnihamer",
       "title": "OmniHaMeR: Foundation Model for Metric Hand Pose Estimation",
       "status": "ongoing",
+      "hidden": true,
       "affiliation": "2077AI",
       "tags": ["Hand Pose", "ViT", "Vision Foundation Model", "Embodied AI"],
       "description": "A vision foundation model that maps arbitrary RGB, depth, mask, or multi-view inputs to metric hand meshes in world coordinates. Targets absolute-pose accuracy for VLA co-training, with a MapAnything-style backbone and a MANO head.",
@@ -144,6 +145,32 @@
       "media": {"video": "media/cyberarena.mp4"}
     },
     {
+      "id": "touchtwin",
+      "title": "TouchTwin: Scaling Human Touch Data via Real-to-Sim-to-Real",
+      "authors": [
+        {"name": "Huiwen Han", "equal_contribution": true},
+        {"name": "Nuo Chen", "equal_contribution": true},
+        {"name": "Ziyao Zeng", "equal_contribution": true},
+        {"name": "Dayou Li"},
+        {"name": "Hao Wang"},
+        {"name": "Amir Hossein Rahmati"},
+        {"name": "Xiaoning Qian"},
+        {"name": "Bangya Liu", "is_me": true},
+        {"name": "Zhiwen Fan"}
+      ],
+      "venue": "LBR@CoRL",
+      "year": 2026,
+      "status": "accepted",
+      "affiliation": "2077AI",
+      "tags": ["Embodied AI", "Tactile Sensing", "Real-to-Sim-to-Real", "Dexterous Manipulation"],
+      "description": "Rebuilds TouchScale glove recordings in MuJoCo, with the recorded touch setting each finger's contact and closing force. A policy trained on these replays grips at 0.99x the recorded force, versus 0.31x for pose imitation.",
+      "links": {
+        "paper": "https://touchtwin.github.io/paper/touchtwin-corl-lbr.pdf",
+        "project_page": "https://touchtwin.github.io/"
+      },
+      "media": {"video": "https://touchtwin.github.io/media/promo_light.mp4"}
+    },
+    {
       "id": "touchscale",
       "title": "TouchScale: 500 Hours of Human Vision and Touch for Visual-Tactile Learning",
       "authors": [
@@ -158,8 +185,9 @@
         {"name": "Masayoshi Tomizuka"},
         {"name": "Zhiwen Fan"}
       ],
+      "venue": "Scaling H2R@CoRL",
       "year": 2026,
-      "status": "in_submission",
+      "status": "accepted",
       "tags": ["Embodied AI", "Tactile Sensing", "Dataset", "Dexterous Manipulation"],
       "description": "A 500-hour dataset of synchronized human vision and touch, captured with a head-mounted RGB-D camera, two wrist cameras, and bimanual tactile gloves with 880 taxels each. Mid-training on TouchScale lifts robot task success from 22.5% to 57.5% across four contact-rich tasks and improves zero-shot contact prediction by 35.1%.",
       "links": {
@@ -178,7 +206,7 @@
         {"name": "Zhiwen Fan"},
         {"name": "Bangya Liu", "is_me": true}
       ],
-      "venue": "WRL@NeurIPS",
+      "venue": "WRL@NeurIPS, WAR@CoRL",
       "year": 2026,
       "status": "accepted",
       "affiliation": "2077AI",
