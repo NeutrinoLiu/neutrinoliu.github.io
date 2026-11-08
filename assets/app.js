@@ -228,7 +228,7 @@
       const image = p.media && p.media.image ? esc(p.media.image) : '';
       const hasMedia = !!(video || image);
       const mediaInner = video
-        ? `<video src="${video}" autoplay muted loop playsinline preload="metadata"></video>`
+        ? `<video data-src="${video}" muted loop playsinline preload="none"></video>`
         : image
           ? `<img src="${image}" alt="${esc(p.title)}" loading="lazy" />`
           : '';
@@ -249,6 +249,25 @@
       return `<article class="${cls.join(' ')}">${mediaBlock}${body}</article>`;
     }).join('')}
   `;
+
+  /* ────── lazy card videos: load and play near the viewport, pause when off-screen ────── */
+  const cardVideos = document.querySelectorAll('.pub__media video[data-src]');
+  if ('IntersectionObserver' in window) {
+    const vio = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        const v = e.target;
+        if (e.isIntersecting) {
+          if (!v.src) v.src = v.dataset.src;
+          v.play().catch(() => {});
+        } else {
+          v.pause();
+        }
+      });
+    }, { rootMargin: '200px 0px' });
+    cardVideos.forEach((v) => vio.observe(v));
+  } else {
+    cardVideos.forEach((v) => { v.src = v.dataset.src; v.autoplay = true; });
+  }
 
   /* ────── honors ────── */
   document.getElementById('honors').innerHTML = `
