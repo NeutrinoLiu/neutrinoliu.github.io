@@ -1,5 +1,5 @@
 {
-  "announcement": "♫ I'm at CoRL 2026, come say hi! 🍻 Catch [Behavior Uncloning](https://behavior-uncloning.github.io/) in the main conference, [ENCORE](https://yifank.github.io/encore/) at WAR, [TouchScale](https://touch-scale.github.io/) at Scaling H2R, and [TouchTwin](https://touchtwin.github.io/) in Late-Breaking Results.",
+  "announcement": "♫ I'm at CoRL 2026, come say hi! 🍻 Catch [Behavior Uncloning](https://behavior-uncloning.github.io/) in the main conference, [ENCORE](https://yifank.github.io/encore/) at WAR, [TouchScale](https://touch-scale.github.io/) at Scaling H2R, [TouchTwin](https://touchtwin.github.io/) in Late-Breaking Results, and Best Paper winner [OpenLongTail](https://openlongtail.github.io/) at Grounded 4D WMs 🏆",
   "profile": {
     "name": "Bangya Liu",
     "name_zh": "刘邦亚",
@@ -105,7 +105,7 @@
     }
   ],
   "highlights": [
-    "cyberarena", "touchtwin", "touchscale", "encore", "more"
+    "cyberarena", "touchtwin", "touchscale", "encore", "more", "openlongtail"
   ],
   "projects": [
     {
@@ -244,6 +244,31 @@
       "media": {
         "video": "https://behavior-uncloning.github.io/assets/videos/overview.mp4"
       }
+    },
+    {
+      "id": "openlongtail",
+      "title": "OpenLongTail: Generative Scaling of Long-Tail Driving Data",
+      "authors": [
+        {"name": "Lulin Liu", "equal_contribution": true},
+        {"name": "Nuo Chen", "equal_contribution": true},
+        {"name": "Yan Wang"},
+        {"name": "Bangya Liu", "is_me": true},
+        {"name": "…"},
+        {"name": "Ruohan Zhang"},
+        {"name": "Marco Pavone"},
+        {"name": "Zhiwen Fan"}
+      ],
+      "venue": "Grounded 4D WMs@CoRL (Best Paper)",
+      "year": 2026,
+      "status": "accepted",
+      "tags": ["Autonomous Driving", "Video Generation", "Novel View Synthesis", "VLA"],
+      "description": "An open-source generative data engine that turns heterogeneous long-tail driving videos, including single dash-cam footage, into pose-grounded multi-view data for VLA policy learning. Pose-informed extrapolative view synthesis with Plücker ray conditioning fills in the missing surround views and improves closed-loop robustness on long-tail events.",
+      "links": {
+        "paper": "https://arxiv.org/abs/2607.09655",
+        "project_page": "https://openlongtail.github.io/",
+        "code": "https://github.com/phai-lab/OpenLongTail"
+      },
+      "media": {"video": "media/openlongtail.mp4"}
     },
     {
       "id": "anadiffusion",
