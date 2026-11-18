@@ -105,7 +105,7 @@
     }
   ],
   "highlights": [
-    "cyberarena", "touchtwin", "touchscale", "encore", "more", "openlongtail"
+    "viewnext", "ipe", "cyberarena", "touchtwin", "touchscale", "encore", "more", "openlongtail"
   ],
   "projects": [
     {
@@ -119,13 +119,55 @@
       "links": {}
     },
     {
+      "id": "viewnext",
+      "title": "ViewNeXt: Diffusion-Based View Synthesis Revisited",
+      "authors": [
+        {"name": "Jian Zhang", "equal_contribution": true},
+        {"name": "Bangya Liu", "is_me": true, "equal_contribution": true},
+        {"name": "Nuo Chen"},
+        {"name": "Hao Wang"},
+        {"name": "Sisong Bei"},
+        {"name": "Xinyu Gong"},
+        {"name": "Gordon Wetzstein"},
+        {"name": "Yipeng Wang"},
+        {"name": "Zhiwen Fan"}
+      ],
+      "year": 2026,
+      "status": "in_submission",
+      "tags": ["Novel View Synthesis", "Video Diffusion", "Camera Control"],
+      "description": "Fine-tuned from a pretrained video diffusion model, ViewNeXt turns a few posed images into novel views that accurately follow the target cameras. One model generates sparse views or a dense trajectory video, the latter as anchor views first, then the video between them.",
+      "links": {},
+      "media": {"image": "media/viewnext.jpg"}
+    },
+    {
+      "id": "ipe",
+      "title": "IPE: Inverse Physics Engine for Video",
+      "authors": [
+        {"name": "Nuo Chen"},
+        {"name": "Bangya Liu", "is_me": true},
+        {"name": "Jian Zhang"},
+        {"name": "Guandao Yang"},
+        {"name": "Wuyang Chen"},
+        {"name": "Atlas Wang"},
+        {"name": "Leonidas Guibas"},
+        {"name": "Gordon Wetzstein"},
+        {"name": "Zhiwen Fan"}
+      ],
+      "year": 2026,
+      "status": "in_submission",
+      "tags": ["Physical Properties", "Video Diffusion", "World Model"],
+      "description": "A feed-forward network that recovers dense, pixel-aligned maps of friction, density, and stiffness directly from real videos, without fitting a simulator to each scene. It fuses an appearance prior with a kinematic likelihood from a video generator as a per-cell Bayesian product, so one model handles scenes with or without physical interaction.",
+      "links": {},
+      "media": {"image": "media/physwm.png"}
+    },
+    {
       "id": "cyberarena",
       "title": "CyberArena: Benchmarking AI Agents in Live Symmetric Attack-and-Defense Combat",
       "authors": [
-        {"name": "Bangya Liu", "is_me": true},
-        {"name": "Jianhong Tu"},
-        {"name": "Yueyang Pan"},
-        {"name": "Hanhong Zhao"},
+        {"name": "Bangya Liu", "is_me": true, "equal_contribution": true},
+        {"name": "Jianhong Tu", "equal_contribution": true},
+        {"name": "Yueyang Pan", "equal_contribution": true},
+        {"name": "Hanhong Zhao", "equal_contribution": true},
         {"name": "…"},
         {"name": "Tianneng Shi"},
         {"name": "Zhun Wang"},
@@ -174,10 +216,10 @@
       "id": "touchscale",
       "title": "TouchScale: 500 Hours of Human Vision and Touch for Visual-Tactile Learning",
       "authors": [
-        {"name": "Dayou Li"},
-        {"name": "Hao Wang"},
-        {"name": "Qianqian Yang"},
-        {"name": "Zihao Zhu"},
+        {"name": "Dayou Li", "equal_contribution": true},
+        {"name": "Hao Wang", "equal_contribution": true},
+        {"name": "Qianqian Yang", "equal_contribution": true},
+        {"name": "Zihao Zhu", "equal_contribution": true},
         {"name": "…"},
         {"name": "Marco Pavone"},
         {"name": "Bangya Liu", "is_me": true},
