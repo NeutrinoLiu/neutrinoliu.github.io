@@ -4,7 +4,7 @@
     "name": "Bangya Liu",
     "name_zh": "刘邦亚",
     "alias": "Neutrino",
-    "title": "Member of Technical Staff, Abaka.ai | Research Scientist, 2077AI Open Source Foundation | Ph.D., ECE @ UW–Madison",
+    "title": "Member of Technical Staff, Abaka.ai | Technical Advisor, 2077 Ventures | Ph.D., ECE @ UW–Madison",
     "current_positions": [
       {
         "role": "Member of Technical Staff",
@@ -12,9 +12,9 @@
         "url": "https://abaka.ai/"
       },
       {
-        "role": "Research Scientist",
-        "org": "2077AI",
-        "url": "https://2077ai.com"
+        "role": "Technical Advisor",
+        "org": "2077 Ventures",
+        "url": "https://2077.vc/"
       },
       {
         "role": "Ph.D.",
@@ -53,11 +53,11 @@
       "end": "Present"
     },
     {
-      "role": "Research Scientist",
-      "org": "2077AI Open Source Foundation",
-      "url": "https://2077ai.com",
-      "location": "Remote",
-      "start": "Feb 2026",
+      "role": "Technical Advisor",
+      "org": "2077 Ventures",
+      "url": "https://2077.vc/",
+      "location": "Mountain View, CA",
+      "start": "Nov 2026",
       "end": "Present"
     },
     {
@@ -104,8 +104,11 @@
       "end": "Jun 2019"
     }
   ],
-  "highlights": [
-    "viewnext", "ipe", "cyberarena", "touchtwin", "touchscale", "encore", "more", "openlongtail"
+  "lead": [
+    "viewnext", "cyberarena", "encore", "transformer-slam", "byteloom", "privacy-aware-perception", "swings"
+  ],
+  "colead": [
+    "ipe", "touchscale", "touchtwin", "spatialstack"
   ],
   "projects": [
     {
@@ -135,8 +138,8 @@
       "year": 2026,
       "status": "in_submission",
       "tags": ["Novel View Synthesis", "Video Diffusion", "Camera Control"],
-      "description": "Fine-tuned from a pretrained video diffusion model, ViewNeXt turns a few posed images into novel views that accurately follow the target cameras. One model generates sparse views or a dense trajectory video, the latter as anchor views first, then the video between them.",
-      "links": {},
+      "description": "Fine-tuned from a pretrained video diffusion model in about 650 H100 GPU-hours, ViewNeXt turns a few posed images into novel views that accurately follow the target cameras. One model generates sparse views or a dense trajectory video, the latter as anchor views first, then the video between them.",
+      "links": {"project_page": "https://phai-lab.github.io/ViewNext/"},
       "media": {"image": "media/viewnext.jpg"}
     },
     {

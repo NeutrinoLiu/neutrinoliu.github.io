@@ -156,6 +156,14 @@ h2.section-title {
   margin-bottom: 18px;
 }
 h3 { font-size: 15.5px; line-height: 1.45; }
+.star-legend {
+  float: right;
+  font-size: 11px;
+  letter-spacing: .04em;
+  text-transform: none;
+  color: var(--soft);
+}
+.star-legend i { font-size: 9px; margin-left: 8px; }
 
 /* ──────────── about / hero ──────────── */
 .hero__top {

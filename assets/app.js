@@ -212,18 +212,21 @@
   `;
 
   /* ────── projects ────── */
-  const highlightSet = new Set(data.highlights || []);
+  const leadSet = new Set(data.lead || []);
+  const coleadSet = new Set(data.colead || []);
   document.getElementById('projects').innerHTML = `
-    <h2 class="section-title">Projects</h2>
+    <h2 class="section-title">Projects<span class="star-legend"><i class="fa-solid fa-star"></i> led <i class="fa-regular fa-star"></i> co-led</span></h2>
     ${(data.projects || []).filter((p) => !p.hidden).map((p) => {
       const meta = renderPubMeta(p);
       const aff = p.affiliation ? esc(p.affiliation) : '';
       const links = renderLinkRow(p.links, ' · ');
       const head = [meta, aff, links].filter(Boolean).join(' · ');
       const hasAuthors = (p.authors || []).length;
-      const star = highlightSet.has(p.id)
-        ? '<i class="fa-solid fa-star pub__star" aria-label="Highlight" title="Highlight"></i>'
-        : '';
+      const star = leadSet.has(p.id)
+        ? '<i class="fa-solid fa-star pub__star" aria-label="Led" title="Led"></i>'
+        : coleadSet.has(p.id)
+          ? '<i class="fa-regular fa-star pub__star" aria-label="Co-led" title="Co-led"></i>'
+          : '';
       const video = p.media && p.media.video ? esc(p.media.video) : '';
       const image = p.media && p.media.image ? esc(p.media.image) : '';
       const hasMedia = !!(video || image);
