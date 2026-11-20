@@ -138,7 +138,7 @@
       "year": 2026,
       "status": "in_submission",
       "tags": ["Novel View Synthesis", "Video Diffusion", "Camera Control"],
-      "description": "Fine-tuned from a pretrained video diffusion model in about 650 H100 GPU-hours, ViewNeXt turns a few posed images into novel views that accurately follow the target cameras. One model generates sparse views or a dense trajectory video, the latter as anchor views first, then the video between them.",
+      "description": "Fine-tuned from a pretrained video diffusion model, ViewNeXt turns a few posed images into novel views that accurately follow the target cameras. One model generates sparse views or a dense trajectory video, the latter as anchor views first, then the video between them.",
       "links": {"project_page": "https://phai-lab.github.io/ViewNext/"},
       "media": {"image": "media/viewnext.jpg"}
     },
