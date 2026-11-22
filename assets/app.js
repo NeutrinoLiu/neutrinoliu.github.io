@@ -131,7 +131,6 @@
 
   const L = profile.links || {};
   const iconLinks = [
-    L.email_primary  && { href: `mailto:${L.email_primary}`,  icon: 'fa-regular fa-envelope',     label: 'Email' },
     L.google_scholar && { href: L.google_scholar,              icon: 'fa-brands fa-google-scholar', label: 'Google Scholar' },
     L.github         && { href: L.github,                      icon: 'fa-brands fa-github',         label: 'GitHub' },
     L.linkedin       && { href: L.linkedin,                    icon: 'fa-brands fa-linkedin',       label: 'LinkedIn' },
@@ -148,6 +147,7 @@
         <p class="hero__alt">
           ${profile.name_zh ? esc(profile.name_zh) : ''}${profile.name_zh && profile.alias ? ' · ' : ''}${profile.alias ? esc(profile.alias) : ''}
         </p>
+        ${L.email_primary ? `<p class="hero__email"><a href="mailto:${esc(L.email_primary)}">${esc(L.email_primary)}</a></p>` : ''}
       </div>
       ${iconLinks.length ? `
         <div class="hero__icons">

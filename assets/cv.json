@@ -7,19 +7,19 @@
     "title": "Member of Technical Staff, Abaka.ai | Technical Advisor, 2077 Ventures | Ph.D., ECE @ UW–Madison",
     "current_positions": [
       {
-        "role": "Member of Technical Staff",
-        "org": "Abaka.ai",
+        "role": "MTS",
+        "org": "Abaka AI",
         "url": "https://abaka.ai/"
-      },
-      {
-        "role": "Technical Advisor",
-        "org": "2077 Ventures",
-        "url": "https://2077.vc/"
       },
       {
         "role": "Ph.D.",
         "org": "UW–Madison",
         "url": "https://www.engr.wisc.edu/department/electrical-computer-engineering/"
+      },
+      {
+        "role": "Technical Advisor",
+        "org": "2077 Ventures",
+        "url": "https://2077.vc/"
       }
     ],
     "bio": [
@@ -27,11 +27,11 @@
       "I finished my Ph.D. at the [MadNets](https://madnets.cs.wisc.edu/) Lab (originally WiNGS) at UW–Madison in 2026, advised by [Prof. Suman Banerjee](https://pages.cs.wisc.edu/~suman/), moving between video DiTs, Gaussian splats, and the networking systems they run on. I've also been fortunate to work closely with [Prof. Zhiwen Fan](https://zhiwenfan.github.io/) at [PHAI Lab](https://phai-lab.github.io/), whose mentorship shaped much of how I think about 3D vision."
     ],
     "research_interests": [
-      "Embodied AI",
+      "Physical AI",
+      "Dexterous manipulation",
       "3D vision",
       "Video generation",
-      "Spatial Intelligence",
-      "Computer networking"
+      "Spatial Intelligence"
     ],
     "photo": "media/portrait.jpeg",
     "links": {
