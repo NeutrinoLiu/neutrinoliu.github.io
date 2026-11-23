@@ -132,9 +132,9 @@
   const L = profile.links || {};
   const iconLinks = [
     L.google_scholar && { href: L.google_scholar,              icon: 'fa-brands fa-google-scholar', label: 'Google Scholar' },
-    L.github         && { href: L.github,                      icon: 'fa-brands fa-github',         label: 'GitHub' },
-    L.linkedin       && { href: L.linkedin,                    icon: 'fa-brands fa-linkedin',       label: 'LinkedIn' },
     L.cv_pdf         && { href: L.cv_pdf,                      icon: 'fa-regular fa-file-lines',    label: 'CV' },
+    L.linkedin       && { href: L.linkedin,                    icon: 'fa-brands fa-linkedin',       label: 'LinkedIn' },
+    L.x              && { href: L.x,                           icon: 'fa-brands fa-x-twitter',      label: 'X (Twitter)' },
   ].filter(Boolean);
 
   document.getElementById('about').innerHTML = `
