@@ -163,13 +163,13 @@ h2.section-title {
 }
 h3 { font-size: 15.5px; line-height: 1.45; }
 .star-legend {
-  float: right;
+  margin-left: 8px;
   font-size: 13px;
   letter-spacing: .02em;
   text-transform: none;
   color: var(--muted);
 }
-.star-legend i { font-size: 12px; margin-left: 10px; }
+.star-legend i { font-size: 12px; margin-right: 2px; }
 
 /* ──────────── about / hero ──────────── */
 .hero__top {
