@@ -215,7 +215,7 @@
   const leadSet = new Set(data.lead || []);
   const coleadSet = new Set(data.colead || []);
   document.getElementById('projects').innerHTML = `
-    <h2 class="section-title">Projects<span class="star-legend">(<i class="fa-solid fa-star"></i> led, <i class="fa-regular fa-star"></i> co-led)</span></h2>
+    <h2 class="section-title">Projects<span class="star-legend"><i class="fa-solid fa-star"></i> led <i class="fa-regular fa-star"></i> co-led</span></h2>
     ${(data.projects || []).filter((p) => !p.hidden).map((p) => {
       const meta = renderPubMeta(p);
       const aff = p.affiliation ? esc(p.affiliation) : '';
